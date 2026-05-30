@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos — KnowBridge</title>
+  <meta name="description" content="Watch the KnowBridge story and explore short films that make academic knowledge accessible." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="videos">
+  <div id="kb-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('assets/img/hero.jpg')"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container">
+        <span class="eyebrow" data-i18n="videos.eyebrow">Videos</span>
+        <h1 data-i18n="videos.pagetitle">Watch knowledge travel.</h1>
+        <p class="lead" data-i18n="videos.lead">Documentaries and explainers that turn research into stories anyone can follow — starting with the film that started it all.</p>
+      </div>
+    </section>
+
+    <!-- Featured story player (captions powered by main.js) -->
+    <section class="story section" id="story">
+      <div class="container">
+        <h2 class="section-title light center">The KnowBridge Story</h2>
+        <span class="title-rule center"></span>
+        <p class="story-intro">A thirty-second journey across the bridge — from the library to the world.</p>
+        <div class="player">
+          <video id="storyVideo" class="story-video" poster="assets/img/hero.jpg" controls preload="metadata" playsinline>
+            <source src="assets/video/story.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="caption" id="storyCaption" aria-live="polite"></div>
+        </div>
+        <ol class="story-beats" id="storyBeats">
+          <li data-start="0">University City</li>
+          <li data-start="5">The Library</li>
+          <li data-start="10">The Scholars</li>
+          <li data-start="15">Society</li>
+          <li data-start="20">The Bridge</li>
+          <li data-start="25">Knowledge for All</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Individual shots -->
+    <section class="section section-cream-2">
+      <div class="container">
+        <h2 class="section-title">Scenes from the Story</h2>
+        <span class="title-rule"></span>
+        <p class="lead-dark" style="margin-bottom:6px;">Each scene on its own — the building blocks of the KnowBridge film.</p>
+        <div class="video-grid">
+          <figure class="video-card">
+            <video controls preload="none" poster="assets/img/shot1.jpg"><source src="assets/video/shot1.mp4" type="video/mp4" /></video>
+            <figcaption class="vc-body"><span class="vc-tag">Scene 1</span><h3>University City</h3><p>Sometimes academia feels a little like Hogwarts.</p></figcaption>
+          </figure>
+          <figure class="video-card">
+            <video controls preload="none" poster="assets/img/shot2.jpg"><source src="assets/video/shot2.mp4" type="video/mp4" /></video>
+            <figcaption class="vc-body"><span class="vc-tag">Scene 2</span><h3>The Library</h3><p>Extraordinary knowledge lives inside its libraries, archives, and research centres.</p></figcaption>
+          </figure>
+          <figure class="video-card">
+            <video controls preload="none" poster="assets/img/shot3.jpg"><source src="assets/video/shot3.mp4" type="video/mp4" /></video>
+            <figcaption class="vc-body"><span class="vc-tag">Scene 3</span><h3>The Scholars</h3><p>Scholars spend years creating, preserving, and expanding that knowledge.</p></figcaption>
+          </figure>
+          <figure class="video-card">
+            <video controls preload="none" poster="assets/img/shot4.jpg"><source src="assets/video/shot4.mp4" type="video/mp4" /></video>
+            <figcaption class="vc-body"><span class="vc-tag">Scene 4</span><h3>Society</h3><p>Yet many people never reach it — because the distance feels too great.</p></figcaption>
+          </figure>
+          <figure class="video-card">
+            <video controls preload="none" poster="assets/img/shot5.jpg"><source src="assets/video/shot5.mp4" type="video/mp4" /></video>
+            <figcaption class="vc-body"><span class="vc-tag">Scene 5</span><h3>The Bridge</h3><p>KnowBridge was created to help build bridges.</p></figcaption>
+          </figure>
+          <figure class="video-card">
+            <video controls preload="none" poster="assets/img/shot6.jpg"><source src="assets/video/shot6.mp4" type="video/mp4" /></video>
+            <figcaption class="vc-body"><span class="vc-tag">Finale</span><h3>Knowledge for All</h3><p>Because knowledge should not stay behind walls.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Never miss a new film</h2>
+          <p>Get an email whenever we publish a new video, podcast, or story.</p>
+          <form class="join-form subscribe-form" style="justify-content:center;">
+            <input type="email" placeholder="Your email address" aria-label="Your email address" required />
+            <button type="submit" class="btn btn-gold" data-i18n="btn.subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="kb-footer"></div>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

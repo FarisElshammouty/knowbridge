@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnowBridge — Knowledge Access Matters</title>
+  <meta name="description" content="KnowBridge builds bridges between research and society — connecting academic knowledge with public life through multilingual videos, podcasts, and stories." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+
+  <div id="kb-header"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('assets/img/hero.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">KNOWBRIDGE</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Knowledge Access Matters</p>
+      <p class="hero-lede">
+        <span data-i18n="hero.lede1">Academics are not wizards.</span><br />
+        <span data-i18n="hero.lede2">People outside academia are not Muggles.</span><br />
+        <span data-i18n="hero.lede3">The problem is that nobody built enough bridges.</span>
+      </p>
+      <a href="#story" class="btn btn-gold btn-play" data-play-story>
+        <span class="play-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        </span>
+        <span data-i18n="btn.watch">Watch the Story</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Why KnowBridge ===== -->
+  <section class="why section" id="why">
+    <div class="container why-grid">
+      <div class="why-text">
+        <h2 class="section-title" data-i18n="why.title">Why KnowBridge?</h2>
+        <span class="title-rule"></span>
+        <p>
+          Many people see academia as a distant world, speaking a language few understand.
+          Academic knowledge shapes our lives every day — yet much of it stays locked behind
+          <strong>technical language, paywalls, and institutional barriers</strong>.
+        </p>
+        <p class="why-highlight">
+          KnowBridge exists to help knowledge travel further — connecting research with public
+          life through multilingual storytelling, videos, podcasts, and accessible digital content.
+        </p>
+        <a href="about.html" class="btn btn-dark"><span data-i18n="btn.learn">Learn More</span> <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="why-media">
+        <img src="assets/img/shot6.jpg" alt="A bridge built from books connecting a historic university city to a modern city" />
+        <div class="why-media-frame" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Watch the Story ===== -->
+  <section class="story section" id="story">
+    <div class="container">
+      <h2 class="section-title light center" data-i18n="story.title">Watch the Story</h2>
+      <span class="title-rule center"></span>
+      <p class="story-intro">A thirty-second journey across the bridge — from the library to the world.</p>
+
+      <div class="player">
+        <video id="storyVideo" class="story-video" poster="assets/img/hero.jpg" controls preload="metadata" playsinline>
+          <source src="assets/video/story.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="caption" id="storyCaption" aria-live="polite"></div>
+      </div>
+
+      <ol class="story-beats" id="storyBeats">
+        <li data-start="0">University City</li>
+        <li data-start="5">The Library</li>
+        <li data-start="10">The Scholars</li>
+        <li data-start="15">Society</li>
+        <li data-start="20">The Bridge</li>
+        <li data-start="25">Knowledge for All</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Ask KnowBridge ===== -->
+  <section class="ask section" id="ask">
+    <div class="container">
+      <div class="ask-panel">
+        <div class="ask-head">
+          <h2 class="ask-title" data-i18n="ask.title">Ask KnowBridge</h2>
+          <p>Ask a question. Explore knowledge. Find stories, videos, podcasts, articles and more.</p>
+        </div>
+        <div class="ask-body">
+          <form class="ask-form" id="askForm">
+            <input type="text" id="askInput" placeholder="What would you like to learn about?" data-i18n-placeholder="ask.placeholder" aria-label="Ask KnowBridge a question" />
+            <button type="submit" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </form>
+          <div class="ask-chips">
+            <button class="chip" data-q="What is canon formation?">What is canon formation?</button>
+            <button class="chip" data-q="How did ancient medicine work?">How did ancient medicine work?</button>
+            <button class="chip" data-q="How does AI change knowledge?">How does AI change knowledge?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Knowledge Journeys ===== -->
+  <section class="journeys section" id="journeys">
+    <div class="container">
+      <div class="section-head-row">
+        <h2 class="section-title" data-i18n="journeys.title">Knowledge Journeys</h2>
+        <a href="topics.html" class="link-arrow"><span data-i18n="link.alljourneys">Explore all journeys</span> <span class="arrow">&rarr;</span></a>
+      </div>
+
+      <div class="journey-grid">
+        <article class="journey-card">
+          <img class="card-bg" src="assets/img/shot2.jpg" alt="" />
+          <div class="journey-body">
+            <h3>Ancient Medicine</h3>
+            <p>From Greek medicine to modern healthcare.</p>
+            <a href="topics.html" class="btn btn-ghost">Explore Journey <span class="arrow">&rarr;</span></a>
+          </div>
+          <ul class="timeline">
+            <li>Greek</li><li>Arabic</li><li>Medieval</li><li>Modern</li>
+          </ul>
+        </article>
+
+        <article class="journey-card">
+          <img class="card-bg" src="assets/img/hero.jpg" alt="" />
+          <div class="journey-body">
+            <h3>The Journey of Knowledge</h3>
+            <p>From text to translation, canon to database — and beyond to AI.</p>
+            <a href="topics.html" class="btn btn-ghost">Explore Journey <span class="arrow">&rarr;</span></a>
+          </div>
+          <ul class="timeline">
+            <li>Text</li><li>Translation</li><li>Canon</li><li>Database</li><li>AI</li>
+          </ul>
+        </article>
+
+        <article class="journey-card">
+          <img class="card-bg" src="assets/img/shot4.jpg" alt="" />
+          <div class="journey-body">
+            <h3>Truth and Society</h3>
+            <p>How knowledge moves from experts to the public and shapes the world.</p>
+            <a href="topics.html" class="btn btn-ghost">Explore Journey <span class="arrow">&rarr;</span></a>
+          </div>
+          <ul class="timeline">
+            <li>Knowledge</li><li>Communication</li><li>Understanding</li><li>Impact</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What We Build ===== -->
+  <section class="build section" id="build">
+    <div class="container">
+      <h2 class="section-title center" data-i18n="build.title">What We Build</h2>
+      <span class="title-rule center"></span>
+      <div class="build-grid">
+        <div class="build-card">
+          <span class="build-icon icon-violet">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="13" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 10l6-3v10l-6-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Videos</h3>
+          <p>Documentaries and explainers that make knowledge accessible.</p>
+        </div>
+        <div class="build-card">
+          <span class="build-icon icon-green">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Podcasts</h3>
+          <p>Conversations with researchers and thinkers in simple language.</p>
+        </div>
+        <div class="build-card">
+          <span class="build-icon icon-gold">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19l1-4L17 4l3 3L9 18z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Stories</h3>
+          <p>Articles and narratives that connect research to everyday life.</p>
+        </div>
+        <div class="build-card">
+          <span class="build-icon icon-blue">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <h3>Multilingual Content</h3>
+          <p>Breaking language barriers to reach wider, more diverse communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Topics ===== -->
+  <section class="topics section" id="topics">
+    <div class="container">
+      <div class="section-head-row">
+        <h2 class="section-title" data-i18n="topics.title">Featured Topics</h2>
+        <a href="topics.html" class="link-arrow"><span data-i18n="link.alltopics">See all topics</span> <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="topic-grid">
+        <a class="topic-card" href="topics.html"><img class="card-bg" src="assets/img/shot2.jpg" alt="" /><span>Ancient Medicine</span></a>
+        <a class="topic-card" href="topics.html"><img class="card-bg" src="assets/img/hero.jpg" alt="" /><span>Knowledge Journeys</span></a>
+        <a class="topic-card" href="topics.html"><img class="card-bg" src="assets/img/shot6.jpg" alt="" /><span>Canon Formation</span></a>
+        <a class="topic-card" href="topics.html"><img class="card-bg" src="assets/img/shot1.jpg" alt="" /><span>AI &amp; Knowledge</span></a>
+        <a class="topic-card" href="topics.html"><img class="card-bg" src="assets/img/shot3.jpg" alt="" /><span>History of Ideas</span></a>
+        <a class="topic-card" href="topics.html"><img class="card-bg" src="assets/img/shot4.jpg" alt="" /><span>Public Humanities</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Our Vision ===== -->
+  <section class="vision section" id="vision">
+    <div class="vision-bg" style="background-image:url('assets/img/shot3.jpg')"></div>
+    <div class="vision-overlay"></div>
+    <div class="container vision-content">
+      <h2 class="section-title light" data-i18n="vision.title">Our Vision</h2>
+      <span class="title-rule"></span>
+      <div class="vision-grid">
+        <div class="vision-item">
+          <svg viewBox="0 0 24 24" class="vision-icon" aria-hidden="true"><path d="M3 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H3zM21 5h-7a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <p>Knowledge should not stop at university gates.</p>
+        </div>
+        <div class="vision-item">
+          <svg viewBox="0 0 24 24" class="vision-icon" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <p>It should travel.</p>
+        </div>
+        <div class="vision-item">
+          <svg viewBox="0 0 24 24" class="vision-icon" aria-hidden="true"><circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3 19a6 6 0 0 1 12 0M14.5 19a5 5 0 0 1 6.5-4.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <p>It should connect.</p>
+        </div>
+        <div class="vision-item">
+          <svg viewBox="0 0 24 24" class="vision-icon" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <p>It should belong to everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Join the Journey ===== -->
+  <section class="join section" id="join">
+    <div class="container join-inner">
+      <div class="join-head">
+        <svg viewBox="0 0 24 24" class="join-icon" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <div>
+          <h2 data-i18n="join.title">Join the Journey</h2>
+          <p>Get updates on new videos, podcasts, stories and more.</p>
+        </div>
+      </div>
+      <form class="join-form subscribe-form">
+        <input type="email" placeholder="Your email address" aria-label="Your email address" required />
+        <button type="submit" class="btn btn-gold" data-i18n="btn.subscribe">Subscribe</button>
+      </form>
+      <div class="join-social">
+        <span>Follow us</span>
+        <div class="social-row">
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5A2.5 2.5 0 0 0 2.4 7.3C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12z" fill="currentColor"/><path d="M10 9.5l5 2.5-5 2.5z" fill="#0d1b2e"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3c.3 2.3 1.7 3.9 4 4.2v3c-1.5 0-2.9-.5-4-1.3V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.1a3 3 0 1 0 2 2.8V3z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="Podcast"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7.5 15a6 6 0 1 1 9 0M12 13v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="kb-footer"></div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

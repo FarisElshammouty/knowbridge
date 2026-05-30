@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KnowBridge</title>
+  <meta name="description" content="Get in touch with KnowBridge — collaborate, suggest a topic, or bring us to your classroom or community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="contact">
+  <div id="kb-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('assets/img/shot5.jpg')"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+        <h1 data-i18n="contact.pagetitle">Let's build a bridge.</h1>
+        <p class="lead" data-i18n="contact.lead">Have a question, an idea, or a research story that deserves a wider audience? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Send a message</h2>
+          <span class="title-rule"></span>
+          <form class="contact-form proto-form">
+            <div class="field-row">
+              <div class="field"><label for="cname">Name</label><input id="cname" type="text" required /></div>
+              <div class="field"><label for="cemail">Email</label><input id="cemail" type="email" required /></div>
+            </div>
+            <div class="field">
+              <label for="csubject">Subject</label>
+              <select id="csubject">
+                <option>General enquiry</option>
+                <option>Collaboration</option>
+                <option>Suggest a topic</option>
+                <option>For educators</option>
+                <option>Press &amp; media</option>
+              </select>
+            </div>
+            <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" rows="5" required></textarea></div>
+            <div>
+              <button type="submit" class="btn btn-gold">Send message <span class="arrow">&rarr;</span></button>
+            </div>
+            <p class="form-note">This is a prototype form — submissions are not stored or sent anywhere.</p>
+          </form>
+        </div>
+
+        <aside class="info-card">
+          <h3>Reach us directly</h3>
+          <ul class="info-list">
+            <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span><a href="mailto:hello@knowbridge.example">hello@knowbridge.example</a></span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Within the MECANO Doctoral Network · Europe</span></li>
+            <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Available in English, العربية, Français, Español</span></li>
+          </ul>
+          <div class="join-social" style="margin-top:18px;">
+            <span style="color:var(--muted-2);font-size:0.82rem;">Follow us</span>
+            <div class="social-row" style="margin-top:8px;">
+              <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5A2.5 2.5 0 0 0 2.4 7.3C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12z" fill="currentColor"/><path d="M10 9.5l5 2.5-5 2.5z" fill="#11243a"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-cream-2">
+      <div class="container">
+        <h2 class="section-title center">Frequently asked</h2>
+        <span class="title-rule center"></span>
+        <div class="faq">
+          <details open><summary>Is KnowBridge free to use?</summary><p>Yes. Everything we publish — videos, podcasts, and stories — is free and open. Access is the whole point.</p></details>
+          <details><summary>Can I suggest a topic or research story?</summary><p>Please do. Use the form above and choose "Suggest a topic." We read every message.</p></details>
+          <details><summary>Do you offer content in other languages?</summary><p>We're building toward English, Arabic, French, and Spanish. Multilingual access is central to our mission.</p></details>
+          <details><summary>Can KnowBridge work with my school or organisation?</summary><p>Absolutely — choose "For educators" or "Collaboration" in the form and tell us what you have in mind.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="kb-footer"></div>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/layout.js"></script>
+</body>
+</html>
