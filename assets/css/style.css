@@ -167,6 +167,31 @@ a { color: inherit; text-decoration: none; }
 .site-nav > a.active::after { width: 100%; }
 .site-nav > a.active { color: var(--gold-soft); }
 
+/* cross-site CTA button (links to the Ancient Medicine sub-site) */
+.site-nav a.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: auto;
+  color: #2a1c06;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  font-weight: 600;
+  font-size: 0.84rem;
+  padding: 8px 15px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(190, 132, 47, 0.30);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.site-nav a.nav-cta::after { display: none; }
+.site-nav a.nav-cta:hover {
+  color: #2a1c06;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(190, 132, 47, 0.46);
+}
+.nav-cta svg { width: 15px; height: 15px; }
+[dir="rtl"] .nav-cta svg { transform: scaleX(-1); }
+
 /* language selector */
 .lang-select { position: relative; }
 .lang-btn {
@@ -786,14 +811,15 @@ a { color: inherit; text-decoration: none; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 }
 
-@media (max-width: 760px) {
-  .section { padding: 64px 0; }
+/* Collapse the nav to a hamburger early — the 7 links + CTA + language
+   selector need ~1180px to sit comfortably on one row. */
+@media (max-width: 1180px) {
   .nav-toggle { display: flex; }
   .site-nav {
     position: fixed;
     top: 0; right: 0;
     height: 100vh;
-    width: min(320px, 84vw);
+    width: min(330px, 86vw);
     background: rgba(10, 22, 38, 0.98);
     backdrop-filter: blur(10px);
     flex-direction: column;
@@ -804,12 +830,18 @@ a { color: inherit; text-decoration: none; }
     transform: translateX(100%);
     transition: transform 0.3s ease;
     box-shadow: -20px 0 60px rgba(0,0,0,0.4);
+    overflow-y: auto;
   }
   .site-nav.open { transform: translateX(0); }
   .site-nav > a { font-size: 1.1rem; padding: 10px 0; width: 100%; }
   .site-nav > a::after { display: none; }
+  .site-nav a.nav-cta { align-self: flex-start; margin-top: 8px; font-size: 1rem; padding: 11px 20px; }
   .lang-select { margin-top: 14px; }
   .header-inner { position: relative; z-index: 101; }
+}
+
+@media (max-width: 760px) {
+  .section { padding: 64px 0; }
 
   .join-inner { flex-direction: column; align-items: stretch; text-align: center; }
   .join-head { flex-direction: column; text-align: center; }

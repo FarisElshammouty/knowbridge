@@ -46,6 +46,10 @@
         '<button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">' +
           "<span></span><span></span><span></span></button>" +
         '<nav class="site-nav" id="siteNav" aria-label="Primary">' + links +
+          '<a class="nav-cta" href="https://fariselshammouty.github.io/ancient-medical-knowbridge/" target="_blank" rel="noopener">' +
+            '<span data-i18n="nav.ancient">Ancient Medicine</span>' +
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M11 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+          "</a>" +
           '<div class="lang-select">' +
             '<button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">' +
               '<svg viewBox="0 0 24 24" class="globe" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>' +

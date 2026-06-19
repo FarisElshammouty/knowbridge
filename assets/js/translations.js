@@ -7,6 +7,7 @@ window.KB_I18N = {
   en: {
     "nav.home": "Home", "nav.about": "About", "nav.topics": "Topics",
     "nav.videos": "Videos", "nav.podcast": "Podcast", "nav.stories": "Stories", "nav.contact": "Contact",
+    "nav.ancient": "Ancient Medicine",
     "brand.tag": "Knowledge Access Matters",
 
     "hero.subtitle": "Knowledge Access Matters",
@@ -61,6 +62,7 @@ window.KB_I18N = {
   fr: {
     "nav.home": "Accueil", "nav.about": "À propos", "nav.topics": "Thèmes",
     "nav.videos": "Vidéos", "nav.podcast": "Podcast", "nav.stories": "Récits", "nav.contact": "Contact",
+    "nav.ancient": "Médecine ancienne",
     "brand.tag": "L'accès au savoir compte",
 
     "hero.subtitle": "L'accès au savoir compte",
@@ -115,6 +117,7 @@ window.KB_I18N = {
   es: {
     "nav.home": "Inicio", "nav.about": "Acerca de", "nav.topics": "Temas",
     "nav.videos": "Vídeos", "nav.podcast": "Pódcast", "nav.stories": "Relatos", "nav.contact": "Contacto",
+    "nav.ancient": "Medicina antigua",
     "brand.tag": "El acceso al conocimiento importa",
 
     "hero.subtitle": "El acceso al conocimiento importa",
@@ -169,6 +172,7 @@ window.KB_I18N = {
   ar: {
     "nav.home": "الرئيسية", "nav.about": "من نحن", "nav.topics": "المواضيع",
     "nav.videos": "الفيديوهات", "nav.podcast": "البودكاست", "nav.stories": "قصص", "nav.contact": "تواصل معنا",
+    "nav.ancient": "الطب القديم",
     "brand.tag": "الوصول إلى المعرفة مهم",
 
     "hero.subtitle": "الوصول إلى المعرفة مهم",
